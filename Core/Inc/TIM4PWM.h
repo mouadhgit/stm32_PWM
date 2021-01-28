@@ -15,5 +15,6 @@
 #include "stm32f4xx.h"
 
 void PWM_Config();
+void Servo(unsigned int x);
 
 #endif  /* __TIM8PWM_h__*/

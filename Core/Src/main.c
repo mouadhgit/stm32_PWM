@@ -23,14 +23,16 @@ int main(void){
 
   while(1)
   {
-    TIM4->CCR1 = 100;
-    msdelay(2000);
-    TIM4->CCR1 = 250;
-    msdelay(2000);
-    TIM4->CCR1 = 500;
-    msdelay(2000);
-    TIM4->CCR1 = 800;
-    msdelay(2000);
+    // servo motor test
+    
+    Servo(0);
+    msdelay(1000);
+
+    Servo(90);
+    msdelay(1000);       
+
+    Servo(180);
+    msdelay(1000);
   }
   return 0;
 }
